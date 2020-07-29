@@ -141,7 +141,7 @@ public class Genetic {
 			String[] s = node.find1().split("");
 			int x = Integer.parseInt(s[0]);
 			int y = Integer.parseInt(s[1]);
-			if (n.state[x][y] == 0)
+			if (n.checkIndex(x, y) == 0)
 				break;
 			int ran = rd.nextInt(9);
 			if (ran != node.state[x][y]) {
