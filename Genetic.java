@@ -11,7 +11,7 @@ public class Genetic {
 	ArrayList<Node> childs;// ca the con sinh ra tu cha va me
 
 	int finess = 60;// muc chon loc
-	final int amountPersons = 1500;// so ca the trong quan the
+	final int amountPersons =1500;// so ca the trong quan the
 
 	Random rd;
 	Node nn = new Node();
@@ -87,7 +87,6 @@ public class Genetic {
 			if (population.get(o).heuristic() > finess)
 				population.remove(population.get(o));
 		}
-		System.out.println(population.size() + "++++++");
 		// neu quan the vuot qua amountPersons thi lay amountPersonsca the con lai xoa
 		// di
 		while (amountPersons < population.size()) {
@@ -104,16 +103,19 @@ public class Genetic {
 			if (count > population.size() - 1) {
 				int x = rd.nextInt(population.size());
 				int y = rd.nextInt(population.size());
-				n = mutation(crossOver2(population.get(x), population.get(y)));
+				n = mutation(crossOver3(population.get(x), population.get(y)));
 				if (n.heuristic() > finess) {
-					n = mutation(crossOver4(population.get(x), population.get(y)));
+					n = mutation(crossOver1(population.get(x), population.get(y)));
 				}
-//										y++;
-//										if(y==population.size()) {
-//											y=1;
-//											x++;
-//										}
-//										if(x==population.size()-1) return false;
+//				if (n.heuristic() > finess) {
+//					n = mutation(crossOver(population.get(x), population.get(y)));
+//				}
+//				if (n.heuristic() > finess) {
+//					n = mutation(crossOver2(population.get(x), population.get(y)));
+//				}
+//				if (n.heuristic() > finess) {
+//					n = mutation(crossOver4(population.get(x), population.get(y)));
+//				}
 
 			} else
 				n = mutation(population.get(count));
@@ -125,7 +127,7 @@ public class Genetic {
 			if (n.heuristic() < finess) {
 
 				population.add(n);
-				System.out.println(population.size() + "qqqqq");
+				System.out.println("cá thể thêm vào: "+population.size());
 
 			}
 			count++;
@@ -143,11 +145,8 @@ public class Genetic {
 			int y = Integer.parseInt(s[1]);
 			if (n.checkIndex(x, y) == 0)
 				break;
-			int ran = rd.nextInt(9);
-			if (ran != node.state[x][y]) {
 				count++;
-				n.state[x][y] = ran + 1;
-			}
+				n.state[x][y] = node.rand(x, y);
 		}
 		return n;
 	}
@@ -268,7 +267,7 @@ public class Genetic {
 	public void run() {
 
 		// lai 98 the he
-		for (int i = 0; i < 61; i++) {
+		for (int i = 0; i < 60; i++) {
 			// kiem tra goal
 			for (Node node : population) {
 				if (node.heuristic() == 0) {
@@ -293,29 +292,27 @@ public class Genetic {
 					printNode(child);
 					return;
 				}
-				System.out.println(child.heuristic());
 				// them vao quan the
 				population.add(child);
 			}
 			// xoa quan the cha me de chon quan the moi
 			fathers.clear();
 			mothers.clear();
-			System.out.println(population.size() + "=======================================");
-			System.out.println(i);
-			if (i == 58) {
-				createNew();
-				finess = 60;
-				i = 0;
-			}
+			System.out.println("số cá thể sau khi lai: "+population.size());
+			System.out.println("số thế hệ: "+i);
+//			if (finess == 2) {
+//				createNew();
+//				finess = 0;
+//				i = 0;
+//			}
 			// chon loc
 			if (selective() == true)
 				return;
 
-			System.out.println(
-					population.size() + "**********************************************************************");
+			System.out.println("số cá thể sau chọn lọc: "+population.size() );
 			System.out.println();
 			// giam finess sau moi the he
-			if (finess >= 0)
+			if (finess > 2)
 				finess--;
 		}
 		sort(population);
@@ -356,7 +353,13 @@ public class Genetic {
 
 	public static void main(String[] args) {
 		Genetic g = new Genetic();
+		long startTime = System.currentTimeMillis();
 		g.run();
+		long endTime = System.currentTimeMillis();
+
+		long duration = ((endTime - startTime)/1000);
+		System.out.println();
+		System.out.println(duration+"s");
 //		Node n = new Node();
 //		Node n1 = new Node();
 //		n.printNode();
