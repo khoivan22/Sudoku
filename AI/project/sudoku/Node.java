@@ -1,97 +1,95 @@
-package Sudoku;
+package sudoku;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
-import java.util.Random;
-import java.util.TreeMap;
-import java.util.TreeSet;
+import java.util.*;
 
 public class Node {
 	int[][] state;
 	ArrayList<String> indexMap;
-	Map<String, int[]> index;
+	TreeMap<String, int[]> index;
 	Random rd = new Random();
-//	int map[][] = { 
-//			{ 0, 0, 0,  0, 0, 0,  0, 0, 0 },
-//			{ 0, 0, 0,  0, 0, 0,  0, 0, 0 },
-//			{ 0, 0, 0,  0, 0, 0,  0, 0, 0 },
-//			
-//			{ 0, 0, 0,  0, 0, 0,  0, 0, 0 },
-//			{ 0, 0, 0,  0, 0, 0,  0, 0, 0 },
-//			{ 0, 0, 0,  0, 0, 0,  0, 0, 0 },
-//			
-//			{ 0, 0, 0,  0, 0, 0,  0, 0, 0 },
-//			{ 0, 0, 0,  0, 0, 0,  0, 0, 0 },
-//			{ 0, 0, 0,  0, 0, 0,  0, 0, 0 }
-//			 };
-//	int map[][] = { 
+	//	int[][] map = {
+//			{0, 0, 0, 0, 0, 0, 0, 0, 0},
+//			{0, 0, 0, 0, 0, 0, 0, 0, 0},
+//			{0, 0, 0, 0, 0, 0, 0, 0, 0},
+//
+//			{0, 0, 0, 0, 0, 0, 0, 0, 0},
+//			{0, 0, 0, 0, 0, 0, 0, 0, 0},
+//			{0, 0, 0, 0, 0, 0, 0, 0, 0},
+//
+//			{0, 0, 0, 0, 0, 0, 0, 0, 0},
+//			{0, 0, 0, 0, 0, 0, 0, 0, 0},
+//			{0, 0, 0, 0, 0, 0, 0, 0, 0}
+//	};
+//	int map[][] = {
 //			{ 5, 3, 0,  0, 7, 0,  0, 0, 0 },
 //			{ 6, 0, 0,  1, 9, 5,  0, 0, 0 },
 //			{ 0, 9, 8,  0, 0, 0,  0, 6, 0 },
-//			
+//
 //			{ 8, 0, 0,  0, 6, 0,  0, 0, 3 },
 //			{ 4, 0, 0,  8, 0, 3,  0, 0, 1 },
 //			{ 7, 0, 0,  0, 2, 0,  0, 0, 6 },
-//			
+//
 //			{ 0, 6, 0,  0, 0, 0,  2, 8, 0 },
 //			{ 0, 0, 0,  4, 1, 9,  0, 0, 5 },
 //			{ 0, 0, 0,  0, 8, 0,  0, 7, 9 }
 //	};
-//	int map[][] = { 
+//	int map[][] = {
 //			{ 0, 1, 0,  0, 0, 2,  3, 4, 0 },
 //			{ 0, 0, 4,  0, 0, 5,  6, 1, 0 },
 //			{ 0, 7, 0,  0, 3, 0,  0, 0, 8 },
-//			
+//
 //			{ 0, 0, 0,  8, 0, 3,  1, 0, 2 },
 //			{ 0, 0, 9,  0, 0, 0,  4, 0, 0 },
 //			{ 5, 0, 3,  6, 0, 4,  0, 0, 0 },
-//			
+//
 //			{ 8, 0, 0,  0, 7, 0,  0, 9, 0 },
 //			{ 0, 4, 2,  1, 0, 0,  7, 0, 0 },
 //			{ 0, 9, 6,  2, 0, 0,  0, 3, 0 }
 //			 };
-//	int map0[][] = { 
-//			{ 0, 0, 1,  0, 2, 3,  0, 4, 0 },
-//			{ 0, 0, 0,  0, 5, 1,  0, 6, 0 },
-//			{ 7, 0, 5,  0, 0, 8,  0, 0, 0 },
-//			
-//			{ 0, 0, 4,  0, 0, 9,  0, 5, 0},
-//			{ 0, 1, 0,  0, 0, 0,  0, 3, 0 },
-//			{ 0, 3, 0,  2, 0, 0,  9, 0, 0 },
-//			
-//			{ 0, 0, 0,  8, 0, 0,  2, 0, 3 },
-//			{ 0, 8, 0,  1, 3, 0,  0, 0, 0 },
-//			{ 0, 5, 0,  9, 6, 0,  7, 0, 0 }
-//			 };
-//	int map[][] = { 
+//	int map[][] = { { 0, 0, 1, 0, 2, 3, 0, 4, 0 }, { 0, 0, 0, 0, 5, 1, 0, 6, 0 }, { 7, 0, 5, 0, 0, 8, 0, 0, 0 },
+//
+//			{ 0, 0, 4, 0, 0, 9, 0, 5, 0 }, { 0, 1, 0, 0, 0, 0, 0, 3, 0 }, { 0, 3, 0, 2, 0, 0, 9, 0, 0 },
+//
+//			{ 0, 0, 0, 8, 0, 0, 2, 0, 3 }, { 0, 8, 0, 1, 3, 0, 0, 0, 0 }, { 0, 5, 0, 9, 6, 0, 7, 0, 0 } };
+	int map[][] = {{5, 3, 0, 0, 7, 0, 0, 0, 0}, {6, 0, 0, 1, 9, 5, 0, 0, 0}, {0, 9, 8, 0, 0, 0, 0, 6, 0},
+
+			{8, 0, 0, 0, 6, 0, 0, 0, 3}, {4, 0, 0, 8, 0, 3, 0, 0, 1}, {7, 0, 0, 0, 2, 0, 0, 0, 6},
+
+			{0, 6, 0, 0, 0, 0, 2, 8, 0}, {0, 0, 0, 4, 1, 9, 0, 0, 5}, {0, 0, 0, 0, 8, 0, 0, 7, 9}};
+//	int map[][] = {
 //			{ 1, 0, 2,  0, 0, 0,  3, 0, 0 },
 //			{ 0, 0, 3,  0, 4, 0,  0, 0, 5 },
 //			{ 0, 0, 0,  0, 6, 0,  0, 7, 0 },
-//			
+//
 //			{ 6, 0, 0,  1, 0, 0,  5, 0, 0 },
 //			{ 0, 5, 0,  0, 2, 0,  0, 8, 0 },
 //			{ 0, 0, 7,  0, 0, 9,  0, 0, 3 },
-//			
+//
 //			{ 0, 8, 0,  0, 5, 0,  0, 0, 0 },
 //			{ 2, 0, 0,  0, 7, 0,  6, 0, 0 },
 //			{ 0, 0, 4,  0, 0, 0,  9, 0, 8 }
 //			 };
-	int map[][] = { { 0, 0, 1, 0, 0, 0, 2, 0, 0 }, { 0, 3, 0, 0, 0, 4, 0, 0, 5 }, { 6, 0, 0, 0, 7, 0, 0, 3, 0 },
+//	int[][] map = {
+//			{0, 0, 1, 0, 0, 0, 2, 0, 0},
+//			{0, 3, 0, 0, 0, 4, 0, 0, 5},
+//			{6, 0, 0, 0, 7, 0, 0, 3, 0},
+//
+//			{0, 0, 4, 0, 0, 5, 0, 0, 0},
+//			{0, 7, 0, 0, 2, 0, 0, 8, 0},
+//			{0, 0, 0, 9, 0, 0, 6, 0, 0},
+//
+//			{0, 2, 0, 0, 8, 0, 0, 0, 1},
+//			{5, 0, 0, 6, 0, 0, 0, 7, 0},
+//			{0, 0, 9, 0, 0, 0, 3, 0, 0}};
 
-			{ 0, 0, 4, 0, 0, 5, 0, 0, 0 }, { 0, 7, 0, 0, 2, 0, 0, 8, 0 }, { 0, 0, 0, 9, 0, 0, 6, 0, 0 },
-
-			{ 0, 2, 0, 0, 8, 0, 0, 0, 1 }, { 5, 0, 0, 6, 0, 0, 0, 7, 0 }, { 0, 0, 9, 0, 0, 0, 3, 0, 0 } };
-
-	public Node() {
+	public Node(int[][] mapT) {
 		super();
-
-		indexMap = new ArrayList<String>();
-		index = new TreeMap<String, int[]>();
+		this.map = mapT;
+		indexMap = new ArrayList<>();
+		index = new TreeMap<>();
 		findIndexM();
 		this.state = new int[9][9];
 		for (int i = 0; i < state.length; i++) {
-//			System.out.println();
 			for (int k = 0; k < state.length; k++) {
 //				this.state[i][k]=k;
 				if (map[i][k] == 0) {
@@ -107,18 +105,15 @@ public class Node {
 
 	// kiem tra goal
 	public boolean isGoal() {
-		if (heuristic() == 0)
-			return true;
-		else
-			return false;
+		return heuristic() == 0;
 	}
 
 	public int checkHorizontal() {
 		int re = 0;
-		for (int i = 0; i < this.state.length; i++) {
+		for (int[] ints : this.state) {
 			for (int j = 0; j < this.state.length; j++) {
 				for (int j2 = j + 1; j2 < state.length; j2++) {
-					if (this.state[i][j] == this.state[i][j2])
+					if (ints[j] == ints[j2])
 						re++;
 				}
 			}
@@ -144,7 +139,7 @@ public class Node {
 	public int check3x3() {
 		int count = 0;
 		int dex = 0;
-		List<Integer> a = new ArrayList<Integer>();
+		List<Integer> a = new ArrayList<>();
 		// lay tung o 3x3 de kiem tra
 		for (int l = 0; l < 3; l++) {
 			int index1 = 0;
@@ -161,7 +156,7 @@ public class Node {
 				}
 				for (int i = 0; i < state.length; i++) {
 					for (int j = i + 1; j < state.length; j++) {
-						if (a.get(i) == a.get(j))
+						if (a.get(i).equals(a.get(j)))
 							count++;
 					}
 				}
@@ -179,7 +174,7 @@ public class Node {
 		return this.check3x3() + this.checkDoc() + this.checkHorizontal();
 	}
 
-	//xung dot tai mot diem
+	// xung dot tai mot diem
 	public int checkIndex(int x, int y) {
 		int result = 0;
 		// ngang doc
@@ -209,22 +204,15 @@ public class Node {
 		return result - 1;
 	}
 
-	//tim vi tri co xung dot lon nha
-	public String find() {
-		int x = 0;
-		int y = 0;
-		for (int i = 0; i < state.length; i++) {
-
-//			System.out.println();
-			for (int j = 0; j < state.length; j++) {
-				if (checkIndex(x, y) < checkIndex(i, j)) {
-					x = i;
-					y = j;
-				}
-			}
-		}
-		return x + "" + y;
-	}
+	// tim vi tri co xung dot lon nha
+	/*
+	 * public String find() { int x = 0; int y = 0; for (int i = 0; i <
+	 * state.length; i++) {
+	 *
+	 * // System.out.println(); for (int j = 0; j < state.length; j++) { if
+	 * (checkIndex(x, y) < checkIndex(i, j)) { x = i; y = j; } } } return x + "" +
+	 * y; }
+	 */
 
 	public String find1() {
 		int x = 0;
@@ -252,8 +240,7 @@ public class Node {
 		return x + "" + y;
 	}
 
-	
-	//tim cac o trong map
+	// tim cac o trong map
 	public void findIndexM() {
 		for (int i = 0; i < map.length; i++) {
 			for (int j = 0; j < map.length; j++) {
@@ -263,21 +250,21 @@ public class Node {
 		}
 	}
 
-	//int sudoku
+	// int sudoku
 	public void printNode() {
-		for (int i = 0; i < state.length; i++) {
+		for (int[] ints : state) {
 			System.out.println();
 			for (int j = 0; j < state.length; j++) {
-				System.out.print(state[i][j] + "-");
+				System.out.print(ints[j] + "-");
 			}
 
 		}
 	}
 
-	//random gia tri sao cho k trung voi o ngang doc  3x3 
+	// random gia tri sao cho k trung voi o ngang doc 3x3
 	public int rand(int x, int y) {
 
-		TreeSet<Integer> index = new TreeSet<Integer>();
+		TreeSet<Integer> index = new TreeSet<>();
 		for (int j = 0; j < 9; j++) {
 			if (y != j) {
 				if (map[x][j] > 0) {
@@ -311,18 +298,4 @@ public class Node {
 				return result;
 		}
 	}
-
-	public static void main(String[] args) {
-//		System.out.println(new Node().heuristic());
-
-		Node n = new Node();
-		System.out.println(n.heuristic());
-		n.printNode();
-
-//		System.out.println();
-//		System.out.println("======="+n.find()+"======");
-
-//		n.checkIndex(0, 6);
-	}
-
 }
