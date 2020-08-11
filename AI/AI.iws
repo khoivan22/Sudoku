@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f87595d7-8deb-4a9e-962e-0fec6951466b" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1d5X3jSL0uTMti74sD14eU9G5Pm" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH" value="234" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ATHTTT" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="labs2" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Grid">
+    <configuration name="GeneticL" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sudoku.GeneticL" />
+      <module name="AI" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sudoku.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GeneticTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sudoku.GeneticTest" />
+      <module name="AI" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sudoku.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Grid" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sudoku.Grid" />
+      <module name="AI" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sudoku.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NodeTemp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sudoku.NodeTemp" />
+      <module name="AI" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sudoku.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="form" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sudoku.form" />
+      <module name="AI" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sudoku.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.GeneticL" />
+      <item itemvalue="Application.Grid" />
+      <item itemvalue="Application.form" />
+      <item itemvalue="Application.GeneticTest" />
+      <item itemvalue="Application.NodeTemp" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Grid" />
+        <item itemvalue="Application.GeneticTest" />
+        <item itemvalue="Application.form" />
+        <item itemvalue="Application.NodeTemp" />
+        <item itemvalue="Application.GeneticL" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f87595d7-8deb-4a9e-962e-0fec6951466b" name="Default Changelist" comment="" />
+      <created>1591715730149</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1591715730149</updated>
+      <workItem from="1591715732806" duration="4465000" />
+      <workItem from="1591720927608" duration="5601000" />
+      <workItem from="1591748671675" duration="5401000" />
+      <workItem from="1591938455952" duration="95000" />
+      <workItem from="1592153184203" duration="844000" />
+      <workItem from="1592354240472" duration="5687000" />
+      <workItem from="1592489927780" duration="58000" />
+      <workItem from="1592725941212" duration="33000" />
+      <workItem from="1592725996504" duration="6909000" />
+      <workItem from="1592932576646" duration="8811000" />
+      <workItem from="1592958533714" duration="6296000" />
+      <workItem from="1593000939859" duration="3548000" />
+      <workItem from="1593015154016" duration="3177000" />
+      <workItem from="1593148292729" duration="1856000" />
+      <workItem from="1593264751957" duration="610000" />
+      <workItem from="1593267229288" duration="5000" />
+      <workItem from="1593527408619" duration="13000" />
+      <workItem from="1593921300159" duration="17943000" />
+      <workItem from="1593946338622" duration="8094000" />
+      <workItem from="1593958618507" duration="2158000" />
+      <workItem from="1594045739324" duration="9000" />
+      <workItem from="1594088784631" duration="63000" />
+      <workItem from="1594088995530" duration="1140000" />
+      <workItem from="1594195856711" duration="1380000" />
+      <workItem from="1594197968705" duration="528000" />
+      <workItem from="1594399493750" duration="32000" />
+      <workItem from="1594399657199" duration="68000" />
+      <workItem from="1594611869455" duration="16322000" />
+      <workItem from="1594631422194" duration="432000" />
+      <workItem from="1594651415816" duration="799000" />
+      <workItem from="1594661003645" duration="353000" />
+      <workItem from="1594688028998" duration="2616000" />
+      <workItem from="1594742323050" duration="1069000" />
+      <workItem from="1594788379893" duration="2705000" />
+      <workItem from="1594799732983" duration="3612000" />
+      <workItem from="1594884978608" duration="5502000" />
+      <workItem from="1594912894802" duration="17000" />
+      <workItem from="1594955587726" duration="5552000" />
+      <workItem from="1594963291114" duration="5452000" />
+      <workItem from="1594971585214" duration="7150000" />
+      <workItem from="1594987314681" duration="17000" />
+      <workItem from="1595378098557" duration="1157000" />
+      <workItem from="1595405157382" duration="595000" />
+      <workItem from="1596114413034" duration="2160000" />
+      <workItem from="1596116870229" duration="4643000" />
+      <workItem from="1596121581436" duration="760000" />
+      <workItem from="1596122368575" duration="414000" />
+      <workItem from="1596122851799" duration="1053000" />
+      <workItem from="1596273383279" duration="717000" />
+      <workItem from="1596363645166" duration="22000" />
+      <workItem from="1596791014358" duration="231000" />
+      <workItem from="1596796538982" duration="435000" />
+      <workItem from="1597043061278" duration="12294000" />
+      <workItem from="1597078696920" duration="21000" />
+      <workItem from="1597133092591" duration="1203000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="532" y="174" width="665" height="442" key="#Notifications" timestamp="1596273406570">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="532" y="174" width="665" height="442" key="#Notifications/0.0.1536.824@0.0.1536.824" timestamp="1596273406570" />
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1596115866866">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1596115866866" />
+    <state x="574" y="96" key="#com.intellij.ide.util.MemberChooser" timestamp="1597053740031">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="574" y="96" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1597053740031" />
+    <state x="566" y="294" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1596114465722">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="566" y="294" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1536.824@0.0.1536.824" timestamp="1596114465722" />
+    <state x="374" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1597046570601">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="374" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1597046570601" />
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1597046577936">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1597046577936" />
+    <state x="551" y="191" key="#com.intellij.uiDesigner.palette.ComponentItemDialog" timestamp="1592153408526">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="644" y="297" key="#com.intellij.uiDesigner.palette.ComponentItemDialog.OneOff" timestamp="1592153414309">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="644" y="297" key="#com.intellij.uiDesigner.palette.ComponentItemDialog.OneOff/0.0.1536.824@0.0.1536.824" timestamp="1592153414309" />
+    <state x="551" y="191" key="#com.intellij.uiDesigner.palette.ComponentItemDialog/0.0.1536.824@0.0.1536.824" timestamp="1592153408526" />
+    <state x="524" y="115" key="#xdebugger.evaluate" timestamp="1593003373606">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="524" y="115" key="#xdebugger.evaluate/0.0.1536.824@0.0.1536.824" timestamp="1593003373606" />
+    <state width="480" height="466" key="DebuggerActiveHint" timestamp="1597047480261">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="480" height="466" key="DebuggerActiveHint/0.0.1536.824@0.0.1536.824" timestamp="1597047480261" />
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1597133923905">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1597133923905" />
+    <state width="1493" height="145" key="GridCell.Tab.0.bottom" timestamp="1597134305717">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="145" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1597134305717" />
+    <state width="1493" height="145" key="GridCell.Tab.0.center" timestamp="1597134305717">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="145" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1597134305717" />
+    <state width="1493" height="145" key="GridCell.Tab.0.left" timestamp="1597134305717">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="145" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1597134305717" />
+    <state width="1493" height="145" key="GridCell.Tab.0.right" timestamp="1597134305717">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="145" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1597134305717" />
+    <state width="1493" height="275" key="GridCell.Tab.1.bottom" timestamp="1597056054420">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="275" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1597056054420" />
+    <state width="1493" height="275" key="GridCell.Tab.1.center" timestamp="1597056054420">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="275" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1597056054420" />
+    <state width="1493" height="275" key="GridCell.Tab.1.left" timestamp="1597056054420">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="275" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1597056054420" />
+    <state width="1493" height="275" key="GridCell.Tab.1.right" timestamp="1597056054420">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="275" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1597056054420" />
+    <state x="429" y="127" key="GuiDesigner.FormSource.Dialog" timestamp="1592153439212">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="429" y="127" key="GuiDesigner.FormSource.Dialog/0.0.1536.824@0.0.1536.824" timestamp="1592153439212" />
+    <state x="311" y="50" key="SettingsEditor" timestamp="1596273487586">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="311" y="50" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1596273487586" />
+    <state x="490" y="154" width="540" height="524" key="StructurePopup" timestamp="1593926354513">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="490" y="154" width="540" height="524" key="StructurePopup/0.0.1536.824@0.0.1536.824" timestamp="1593926354513" />
+    <state x="388" y="160" key="caller.chooser.dialog" timestamp="1596117505562">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="388" y="160" key="caller.chooser.dialog/0.0.1536.824@0.0.1536.824" timestamp="1596117505562" />
+    <state x="93" y="93" width="1350" height="638" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1597044839935">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="93" y="93" width="1350" height="638" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1597044839935" />
+    <state x="499" y="173" key="extract.method.dialog" timestamp="1597046334737">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="173" key="extract.method.dialog/0.0.1536.824@0.0.1536.824" timestamp="1597046334737" />
+    <state x="209" y="33" key="new project wizard" timestamp="1596114432150">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="209" y="33" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1596114432150" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1594885805431">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1594885805431" />
+    <state x="425" y="66" width="672" height="676" key="search.everywhere.popup" timestamp="1597133586079">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="66" width="672" height="676" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1597133586079" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/labs3/LocalSearch.java</url>
+          <line>97</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/labs3/LocalSearch.java</url>
+          <line>60</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/labs2/Queens.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/labs2/Queens.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/labs2/DFS.java</url>
+          <line>10</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/genetic/GeneticAlgorithm.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/sudoku/sudoku/GeneticL.java</url>
+          <line>209</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
